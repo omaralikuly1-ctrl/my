@@ -1,0 +1,101 @@
+/* Основные настройки */
+:root {
+    --primary: #00d4ff;
+    --accent: #ff8c00;
+    --bg: #0d1117;
+    --card: #161b22;
+    --text: #c9d1d9;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Шапка */
+header {
+    background: linear-gradient(180deg, rgba(0,212,255,0.1) 0%, rgba(13,17,23,1) 100%);
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 1px solid #30363d;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    color: var(--white);
+    margin: 0;
+    letter-spacing: 5px;
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+}
+
+.team-number {
+    color: var(--primary);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Сетки и карточки */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #30363d;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+/* Таблицы */
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.spec-table td {
+    padding: 10px 0;
+    border-bottom: 1px solid #30363d;
+}
+
+.spec-table td:first-child {
+    font-weight: bold;
+}
+
+.spec-table td:last-child {
+    text-align: right;
+    color: var(--primary);
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #8b949e;
+    font-size: 0.8rem;
+}
